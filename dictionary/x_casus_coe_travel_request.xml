@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Travel Request" max_length="40" name="x_casus_coe_travel_request" type="collection">
+        <element label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Departure Date" max_length="40" name="departure_date" type="glide_date"/>
+        <element label="Destination" max_length="40" name="destination" type="string"/>
+        <element label="EID Number" max_length="40" name="eid_number" type="string"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="Estimated Cost" max_length="40" name="estimated_cost" type="currency"/>
+        <element label="Expected Flight Expense" max_length="40" name="flight_expense" type="currency"/>
+        <element label="Fund" max_length="40" name="fund" type="string"/>
+        <element choice="1" label="Fund Type" max_length="40" name="fund_type" type="string">
+            <choice>
+                <element label="University Fund" sequence="1" value="university"/>
+                <element label="UEI/UFSS Account" sequence="2" value="uei_ufss"/>
+            </choice>
+        </element>
+        <element label="General Purpose of Travel" max_length="400" name="general_purpose_of_travel" type="string"/>
+        <element label="Lodging Rate Exception" max_length="40" name="lodging_rate_exception" type="boolean"/>
+        <element label="Lodging Rate Per Night" max_length="40" name="lodging_rate_per_night" type="currency"/>
+        <element label="Mailing Address" max_length="50" name="mailing_address" type="string"/>
+        <element label="Expected Meal Expense" max_length="40" name="meal_expense" type="currency"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Other Trip Type" max_length="40" name="other_trip_type" type="string"/>
+        <element label="Phone" max_length="40" name="phone" type="string"/>
+        <element label="Event Registration Expense" max_length="40" name="registration_expense" type="currency"/>
+        <element label="Return Date" max_length="40" name="return_date" type="glide_date"/>
+        <element choice="3" label="State" max_length="40" name="state" type="integer">
+            <choice>
+                <element label="Requested" sequence="1" value="1"/>
+                <element label="Awaiting Department Review" sequence="2" value="2"/>
+                <element label="Awaiting Chair Review" sequence="3" value="3"/>
+                <element label="Awaiting Dean Review" sequence="4" value="4"/>
+                <element label="Approved" sequence="5" value="5"/>
+                <element label="Closed Completed" sequence="6" value="6"/>
+                <element label="Closed Rejected" sequence="7" value="7"/>
+            </choice>
+        </element>
+        <element label="Traveler" max_length="32" name="traveler" reference="sys_user" type="reference"/>
+        <element choice="1" label="Travel Type" max_length="40" name="travel_type" type="string">
+            <choice>
+                <element label="In-State" sequence="100" value="in_state"/>
+                <element label="Out-of-State" sequence="200" value="out_of_state"/>
+            </choice>
+        </element>
+        <element choice="3" label="Trip Type" max_length="40" name="trip_type" type="string">
+            <choice>
+                <element label="Conference" sequence="1" value="conference"/>
+                <element label="Research" sequence="2" value="research"/>
+                <element label="Other" sequence="3" value="other"/>
+            </choice>
+        </element>
+        <element label="Vehicle Rate" max_length="40" name="vehicle_rate" type="currency"/>
+        <index name="index">
+            <element name="traveler"/>
+        </index>
+        <index name="index2">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

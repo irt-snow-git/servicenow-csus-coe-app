@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:0cc110730fb13e0012e4348ce1050e5e</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-04-04 22:47:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>10c110730fb13e0012e4348ce1050e7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>other_trip_type</sys_name>
+        <sys_package display_value="College of Education" source="x_casus_coe">2cecde172b052a409ecc78cef6da15e4</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="College of Education">2cecde172b052a409ecc78cef6da15e4</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_10c110730fb13e0012e4348ce1050e7d</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-04-04 22:47:22</sys_updated_on>
+        <table/>
+        <ui_policy/>
+        <variable>other_trip_type</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>
